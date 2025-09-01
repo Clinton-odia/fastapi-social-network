@@ -21,3 +21,11 @@ class UserDisplay(BaseModel):
 class PostBase(BaseModel):
     title: str
     content: str
+
+
+class PostDisplay(BaseModel):
+    title: str
+    content: str
+
+    class Config:
+        from_attributes = True
