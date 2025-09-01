@@ -9,3 +9,10 @@ class User(Base):
     username = Column(String)
     email = Column(String)
     password = Column(String)
+
+
+class Post(Base):
+    __tablename__ = "post"
+    id = Column(Integer, primary_key=True, index=True)
+    title = Column(String)
+    content = Column(String)
